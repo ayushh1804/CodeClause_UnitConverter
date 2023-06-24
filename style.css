@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Belanosima", sans-serif;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  opacity: 85%;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  /* border: 2px solid #ded5d5; */
+  border-radius: 5px;
+  background: transparent;
+}
+
+.navbar {
+  color: rgb(0, 0, 0);
+}
+
+.btn_cat {
+  background-color: rgb(39, 99, 227);
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 8rem;
+  list-style: none;
+  margin: 15px 20px;
+  padding: 0.5rem;
+  background-color: rgb(224, 236, 236);
+  font-weight: 500;
+}
+li:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 34px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #032c36;
+}
+
+.topics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  font-size: 20px;
+  color: rgb(1, 14, 18);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #12eb5e;
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 10px 0 20px 10.3rem;
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: hsl(138, 59%, 54%);
+}
+
+#result {
+  font-size: 24px;
+  text-align: center;
+  color: #775b6d;
+}
