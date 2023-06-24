@@ -9,7 +9,7 @@
   <body>
     <div class="navbar">
       <ul class="list">
-        <li class="home">Home</li>
+       <a href="./index.html"> <li class="home">Home</li></a>
         <li class="services">Services</li>
         <li class="about">About Us</li>
       </ul>
@@ -21,27 +21,11 @@
       <h1>UNIT CONVERTOR</h1>
       <div class="topics">
         <button class="btn_cat">Temperature</button>
-        <button class="btn_cat">Weight</button>
+       <a href="./Weight.html"> <button class="btn_cat">Weight</button></a>
         <button class="btn_cat">Length</button>
       </div>
-      <label>Enter the value</label>
-      <input type="number" id="inputValue" placeholder="0" />
-      <select id="fromUnit">
-        <option value="Kilogram">Kilogram</option>
-        <option value="Gram">Gram</option>
-        <option value="Pound">Pound</option>
-        <option value="Ounce">Ounce</option>
-      </select>
-      <label>To</label>
-      <select id="toUnit">
-        <option value="Kilogram">Kilogram</option>
-        <option value="Gram">Gram</option>
-        <option value="Pound">Pound</option>
-        <option value="Ounce">Ounce</option>
-      </select>
-
-      <a href="#" onclick="convert()" class="btn">Convert</a>
-      <p id="result"></p>
+    
+      
     </div>
 
     <script src="./script.js"></script>
