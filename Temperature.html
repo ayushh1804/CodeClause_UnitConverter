@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temprature Convertor</title>
+    <link rel="icon" type="image/x-icon" href="icons.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul class="list">
+        <li class="home">Home</li>
+        <li class="services">Services</li>
+        <li class="about">About Us</li>
+      </ul>
+      <ul class="icon">
+        <li class="gicon"></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>UNIT CONVERTOR</h1>
+      <div class="topics">
+        <button class="btn_cat">Temperature</button>
+        <button class="btn_cat">Weight</button>
+        <button class="btn_cat">Length</button>
+      </div>
+      <label>Enter the value</label>
+      <input type="number" id="inputValue" placeholder="0" />
+      <select id="fromUnit">
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="celcius">Celcius</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <label>To</label>
+      <select id="toUnit">
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="celcius">Celcius</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+
+      <a href="#" onclick="convert()" class="btn">Convert</a>
+      <p id="result"></p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
