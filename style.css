@@ -107,6 +107,7 @@ select {
 
 .btn:hover {
   background-color: hsl(138, 59%, 54%);
+  scale: 1.05;
 }
 
 #result {

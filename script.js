@@ -53,16 +53,16 @@ function convert() {
     }
 
   }
+  else if (fromUnit === "Fahrenheit") {
+    if(toUnit === "Fahrenheit") {
+      result = inputValue *1;
+    }else if(toUnit === "Celcius"){
+      result = inputValue * -17.22;
+    }else if(toUnit === "Kelvin")
+    result = inputValue * 255.928;
+  }
 
 
 
   document.getElementById("result").innerHTML = result.toFixed(3) + " " + toUnit;
 }
-// else if (fromUnit === "Fahrenheit") {
-//   if(toUnit === "Fahrenheit") {
-//     result = inputValue *1;
-//   }else if(toUnit === "Celcius"){
-//     result = inputValue * -17.22;
-//   }else if(toUnit === "Kelvin")
-  
-// }
