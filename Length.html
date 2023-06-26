@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Length Convertor</title>
+    <link rel="icon" type="image/x-icon" href="icons.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul class="list">
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="services">Services</li>
+        <li class="about">About Us</li>
+      </ul>
+      <ul class="icon">
+        <li class="gicon"></li>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>UNIT CONVERTOR</h1>
+      <div class="topics">
+        <a href="Temperature.html"
+          ><button class="btn_cat">Temperature</button></a
+        >
+        <a href="Weight.html"> <button class="btn_cat">Weight</button></a>
+        <button class="btn_cat">Length</button>
+      </div>
+      <label>Enter the value</label>
+      <input type="number" id="inputValue" placeholder="0" />
+      <select id="fromUnit">
+        <option value="Kilometer">Kilometer</option>
+        <option value="Meter">Meter</option>
+        <option value="Foot">Foot</option>
+        
+      </select>
+      <label>To</label>
+      <select id="toUnit">
+        <option value="Kilometer">Kilometer</option>
+        <option value="Meter">Meter</option>
+        <option value="Foot">Foot</option>
+        
+      </select>
+
+      <a href="#" onclick="convert()" class="btn">Convert</a>
+      <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
