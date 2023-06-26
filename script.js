@@ -57,24 +57,24 @@ function convert() {
     if(toUnit === "Fahrenheit") {
       result = inputValue *1;
     }else if(toUnit === "Celcius"){
-      result = inputValue * -17.22;
+      result = (5/9)(inputValue-32);
     }else if(toUnit === "Kelvin")
-    result = inputValue * 255.928;
+    result = (5/9)(inputValue+459.67);
   }
   else if(fromUnit === "Celcius"){
     if(toUnit === "Fahrenheit"){
-      result = inputValue * 33.8;
+      result = (9/5)*inputValue + 32;
     }else if(toUnit === "Celcius"){
       result = inputValue * 1;
     }else if(toUnit === "Kelvin"){
-      result = inputValue * 274.15;
+      result = inputValue + 273.15;
     }
   }
   else if(fromUnit === "Kelvin"){
     if(toUnit === "Fahrenheit"){
-      result = inputValue * -457.87;
+      result = (inputValue - 273.15)* (9/5) + 32;
     }else if(toUnit === "Celcius"){
-      result = inputValue * -272.15;
+      result = inputValue - 273.15;
     }else if(toUnit === "Kelvin"){
       result = inputValue * 1;
     }
