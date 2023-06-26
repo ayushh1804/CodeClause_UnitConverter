@@ -61,7 +61,24 @@ function convert() {
     }else if(toUnit === "Kelvin")
     result = inputValue * 255.928;
   }
-
+  else if(fromUnit === "Celcius"){
+    if(toUnit === "Fahrenheit"){
+      result = inputValue * 33.8;
+    }else if(toUnit === "Celcius"){
+      result = inputValue * 1;
+    }else if(toUnit === "Kelvin"){
+      result = inputValue * 274.15;
+    }
+  }
+  else if(fromUnit === "Kelvin"){
+    if(toUnit === "Fahrenheit"){
+      result = inputValue * -457.87;
+    }else if(toUnit === "Celcius"){
+      result = inputValue * -272.15;
+    }else if(toUnit === "Kelvin"){
+      result = inputValue * 1;
+    }
+  }
 
 
   document.getElementById("result").innerHTML = result.toFixed(3) + " " + toUnit;
